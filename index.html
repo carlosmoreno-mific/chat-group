@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <aside id="sidebar-container">
+      <div class="sidebar">
+        <header>
+          <button class="btn btn-header">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <h3>All Channels</h3>
+        </header>  
+  
+        <div class="current-channel">
+          <h3 class="current-channel-name">Familia Contreras</h3>
+          <p class="current-channel-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            minima? 😎😀
+          </p>
+        </div>
+  
+        <div class="members">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img
+                  src="https://ui-avatars.com/api/?name=C+1&background=252329&color=fff"
+                  alt=""
+                />
+                <span class="link-text">Channel 1</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img
+                  src="https://ui-avatars.com/api/?name=C+2&background=252329&color=fff"
+                  alt=""
+                />
+                <span class="link-text">Channel 2</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img
+                  src="https://ui-avatars.com/api/?name=C+3&background=252329&color=fff"
+                  alt=""
+                />
+                <span class="link-text">Channel 3</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img
+                  src="https://ui-avatars.com/api/?name=W&background=252329&color=fff"
+                  alt=""
+                />
+                <span class="link-text">Welcome</span>
+              </a>
+            </li>
+          </ul>
+  
+        </div>
+  
+        <div class="sidebar-footer">
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li id="btn-toggle-dropdown" class="nav-item dropdown btn-toggle">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img src="profile.jpg" alt="" />
+                  <span id="span-toggle" class="link-text">Carlos Moreno</span>
+                  <i class="icon-right fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <div
+                id="dropdown-content"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-user"></i>
+                  <span class="dropdown-item-text">Profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a id="signout" href="#" class="dropdown-item">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span class="dropdown-item-text">Logout</span>
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <button id="close-button" class="btn">
+        <i class="fas fa-times"></i>
+      </button>
+    </aside>
+    <main>
+      <div class="wrapper">
+        <header>
+          <button id="hamburguer" class="btn btn-header">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h3>Familia Contreras</h3>
+        </header>
+        <div class="messages">
+          <div class="message">
+            <div class="chat-avatar">
+              <img src="profile.jpg" alt="" />
+            </div>
+            <div class="chat-body">
+              <div class="chat-header">
+                <h3 class="chat-sender">
+                  Carlos Moreno
+                  <span class="chat-date">today at 2:25 PM</span>
+                </h3>
+              </div>
+              <div class="chat-text">
+                <p>
+                  Malesuada eget mattis morbi donec pharetra ante tellus hac
+                  🏭👰 sed dolor at sed convallis proin sed commodo quis
+                  tincidunt sed mattis elementum, laoreet pretium dolor
+                  volutpat, volutpat eu nunc in commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="chat-avatar">
+              <img src="profile2.jpg" alt="" />
+            </div>
+            <div class="chat-body">
+              <div class="chat-header">
+                <h3 class="chat-sender">
+                  Judith Contreras
+                  <span class="chat-date">today at 2:25 PM</span>
+                </h3>
+              </div>
+              <div class="chat-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus, cum?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="chat-avatar">
+              <img src="profile3.jpg" alt="" />
+            </div>
+            <div class="chat-body">
+              <div class="chat-header">
+                <h3 class="chat-sender">
+                  Dina Contreras
+                  <span class="chat-date">today at 2:25 PM</span>
+                </h3>
+              </div>
+              <div class="chat-text">
+                <p>
+                  Habitant cras diam velit fermentum,. Placerat quam hac orci,
+                  dignissim ac, viverra consectetur sed porttitor bibendum non
+                  proins adipiscing semper arcu nec ut dolor est lobortis
+                  ultrices id diam. Nam nec porttitor urna.🤣
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="chat-avatar">
+              <img src="profile2.jpg" alt="" />
+            </div>
+            <div class="chat-body">
+              <div class="chat-header">
+                <h3 class="chat-sender">
+                  Judith Contreras
+                  <span class="chat-date">today at 2:25 PM</span>
+                </h3>
+              </div>
+              <div class="chat-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, veritatis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <form action="">
+            <input type="text" placeholder="Type your message here" />
+            <button class="btn" id="send">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
