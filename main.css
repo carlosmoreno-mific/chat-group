@@ -95,8 +95,7 @@ header h3 {
   font-size: 0.75rem;
 }
 
-/* TODO: modificar bien las clases imagenes */
-img {
+.chat-avatar img, .nav-link img {
   height: 42px;
   width: 42px;
   object-fit: cover;
